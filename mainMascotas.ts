@@ -16,7 +16,7 @@ class Mascota {
 
   public setEdad(nuevaEdad: number): void {
     if (nuevaEdad < 0) {
-      console.log("⚠️ Error: La edad no puede ser negativa.");
+      console.log("Error: La edad no puede ser negativa.");
       this.edadMascota = 0;
     } else {
       this.edadMascota = nuevaEdad;
@@ -24,7 +24,7 @@ class Mascota {
   }
 
   public getFicha(): string {
-    return `📄 Mascota: ${this.nombreMascota} | Tipo: ${this.tipo} | Edad: ${this.edadMascota}`;
+    return ` Mascota: ${this.nombreMascota} | Tipo: ${this.tipo} | Edad: ${this.edadMascota}`;
   }
 
   public esAdulto(): boolean {
@@ -44,7 +44,7 @@ class Canino extends Mascota {
   }
 
   public getFicha(): string {
-    return `🐶 Nombre: ${this.nombreMascota} | Edad: ${this.edadMascota} | Raza: ${this.razaPerro} | Vacuna Rabia: ${this.tieneVacunaRabia ? "Sí" : "No"}`;
+    return `Nombre: ${this.nombreMascota} | Edad: ${this.edadMascota} | Raza: ${this.razaPerro} | Vacuna Rabia: ${this.tieneVacunaRabia ? "Sí" : "No"}`;
   }
 }
 
@@ -60,7 +60,7 @@ class Felino extends Mascota {
   }
 
   public getFicha(): string {
-    return `🐱 Nombre: ${this.nombreMascota} | Edad: ${this.edadMascota} | Pelaje: ${this.colorPelaje} | Estilo de vida: ${this.esDomestico ? "Doméstico" : "Salvaje"}`;
+    return ` Nombre: ${this.nombreMascota} | Edad: ${this.edadMascota} | Pelaje: ${this.colorPelaje} | Estilo de vida: ${this.esDomestico ? "Doméstico" : "Salvaje"}`;
   }
 }
 
